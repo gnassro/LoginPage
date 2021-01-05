@@ -1,10 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'aromrhome.dart';
-
-import 'style/images.dart';
+import 'ui/login_page.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -30,11 +27,12 @@ class StartState extends State<SplashScreen> {
 
   route() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => AromrHome()));
+        context, MaterialPageRoute(builder: (context) => LoginPage()));
   }
 
   initScreen(BuildContext context) {
     return MaterialApp(
+      title: 'Aromair',
       home: Container(
         color: Colors.blueAccent,
       ),
